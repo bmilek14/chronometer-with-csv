@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="lib/ObjectEventTarget.js"></script>
+<script src="chronometer.js"></script>
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script src="lib/moment.js"></script>
+<script src="demo.js"></script>
+</head>
+<body>
+	
+  <img src="ups.png"width = "200px" height="100px">
+<h1>UPS RFX & PLD Chronometr</h1>
+<p>
+  <input type="button" value="start" id="start" />
+  <input type="button" value="pause" id="pause" />
+  <input type="button" value="stop" id="stop" />
+  <input type="button" value="step" id="step" />
+</p>
+<p>
+<strong>startTime:</strong> <span id="startTime"></span>
+</p>
+<p>
+<strong>relative:</strong> <span id="relative"></span>
+</p>
+<p>
+<strong>stopTime:</strong> <span id="stopTime"></span>
+</p>
+<p>
+<ul id="steps"></ul>
+</p>
+<p><form action='csv.php' method='get'>
+<p><label>Name</label><br><input type='text' name='name' value=''></p> 
+<p><label>Email</label><br><input type='text' name='email' value=''></p> 
+<p><input type='submit' name='submit' value='Submit'></p> 
+</form>
+</p>
+</body></html>
